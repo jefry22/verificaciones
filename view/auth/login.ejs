@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/animacion.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div class="relative">
+        <div class="w-full h-screen bg-gray-900
+        flex flex-col space-y-20 md:space-y-24 items-center justify-center p-2 absolute" id="iniciar">
+            <div class="logo flex flex-col items-center space-y-2 md:space-y-4">
+                <img src="/img/star.png" class="w-2 md:w-4 mb-2 drop-shadow-lg animate__animated animate__bounce" alt="">
+                <h2 class="text-3xl md:text-6xl">PremiumBrands</h2>   
+            </div>
+        </div>
+
+        <div class="w-full p-2 h-screen ">
+            <div class="w-full flex flex-col items-center mt-28 mb-8 md:mt-0">
+                <img src="img/logo.webp" alt="" class="w-[80%] md:w-[20%]">
+                <h2 class="text-xl font-semibold text-gray-900 md:text-2xl mb-4 block">Bienvenido!</h2>
+                <p class="text-md md:text-base text-gray-400">Inicia Session para continuar</p>
+            </div>
+            <div class="w-full flex justify-center">
+                <form action="/home"  class="w-full flex flex-col  md:w-[30%] items-center justify-center  text-xs space-y-10">
+                    <input class="w-full border p-3 md:p-4 text-md" type="text" name="user"  placeholder="Ingresar Usuario">
+                    <input class="w-full border p-3 md:p-4 text-md" type="text" name="password" placeholder="Ingresar password">
+                    <button class="w-full bg-gray-800 p-3 md:p-4 text-gray-50 md:text-sm font-bold">Ingresar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+        const app = document.getElementById('iniciar');
+
+        setTimeout(()=>{
+            app.remove()
+
+        },4000)
+</script>
+</html>
