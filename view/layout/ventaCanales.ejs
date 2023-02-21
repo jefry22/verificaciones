@@ -1,0 +1,84 @@
+<%- include('../partials/head') -%>
+
+<div class="w-full h-screen flex flex-col">
+
+    <%- include('../partials/header') -%>
+
+    <div class="flex w-full h-[90%]">
+        <!-- Sidebar-->
+            <%- include('../partials/sidebar') -%>
+        <!-- SECTION DASHBOARD-->
+        <div class="lg:w-4/5  w-full px-2 lg:px-4 ">
+            <div class="border-b border-gray-300 ">
+                <h2 class="font-bold text-gray-900 py-4 text-sm lg:text-xl">Venta x Canales</h2>
+            </div>
+            <!-- CARD CONTAINER  -->
+            <div class="w-full mt-3 space-y-8 ">
+                
+                <form action="" class="flex text-xs font-semibold gap-2 justify-between lg:justify-start">
+                    <div class="relative">
+                        <input type="text" placeholder="Buscar" class="p-2  border border-gray-300 focus:outline-none focus:ring-2 placeholder-gray-800 focus:ring-blue-500 focus:border-transparent">
+                        <div class="absolute inset-y-0 right-0 flex z-2 items-center pr-3">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <input type="text" placeholder="Buscar" class="p-2  border border-gray-300 focus:outline-none focus:ring-2 placeholder-gray-800 focus:ring-blue-500 focus:border-transparent">
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="w-full">
+                    <table class="min-w-full divide-y divide-gray-200">
+                      <thead class="bg-gray-800 text-gray-50">
+                        <tr>
+                          <th class="px-2 py-3 text-left text-xs ">Canal</th>
+                          <th class="px-2 py-3 text-left text-xs  ">Total con Impuesto</th>
+                          <th class="px-2 py-3 text-left text-xs ">Total sin Impuesto</th>
+                        
+                        </tr>
+                      </thead>
+                      <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                          <td class="px-2 py-3 text-left text-xs text-gray-900">Automotriz</td>
+                          <td class="px-2 py-3 text-left text-xs text-gray-500">2642.820</td>
+                          <td class="px-2 py-3 text-left text-xs text-gray-500">3118.530</td>
+                        </tr>
+                        <tr>
+                          <td class="px-2 py-3 text-left text-xs text-gray-900">Cliente Final</td>
+                          <td class="px-2 py-3 text-left text-xs text-gray-500">3118.530</td>
+                          <td class="px-2 py-3 text-left text-xs text-gray-500">3118.530</td>
+                        </tr>
+                        <tr>
+                          <td class="px-2 py-3 text-left text-xs text-gray-900">Distribuidores</td>
+                          <td class="px-2 py-3 text-left text-xs text-gray-500">2642.820</td>
+                          <td class="px-2 py-3 text-left text-xs text-gray-500">3118.530</td>
+                        </tr>
+                        <tr>
+                          <td class="px-2 py-3 text-left text-xs text-gray-900">Horecas</td>
+                          <td class="px-2 py-3 text-left text-xs text-gray-500">2642.820</td>
+                          <td class="px-2 py-3 text-left text-xs text-gray-500">3118.530</td>
+                        </tr>
+                      
+                      </tbody>
+                      <tfoot>
+                        <tr class="text-sm font-bold">
+                            <th class="text-left p-2 ">Total</th>
+                            <td class="px-2">8052.025</td>
+                            <td class="px-2">8052.025</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+            </div>
+        </div>
+    
+        
+    </div>
+    
+</div>
+
+<%- include('../partials/footer') -%>

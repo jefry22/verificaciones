@@ -1,0 +1,54 @@
+
+<%- include('../partials/head') -%>
+
+    <div class="w-full h-screen flex flex-col">
+
+        <%- include('../partials/header') -%>
+
+        <div class="flex w-full h-[90%]">
+            <!-- Sidebar-->
+                <%- include('../partials/sidebar') -%>
+            <!-- SECTION DASHBOARD-->
+               
+            <div class="lg:w-4/5  w-full px-2 lg:px-4 ">
+                <div class="border-b border-gray-300 ">
+                    <h2 class="font-bold text-gray-900 py-4 text-sm lg:text-xl">Dashboard</h2>
+                </div>
+                <!-- CARD CONTAINER  -->
+                <div class="w-full mt-3 space-y-4  lg:space-y-0 lg:space-x-4  lg:flex">
+            
+                    <div class="w-full shadow-md space-y-2 lg:space-y-4  p-2 border text-gray-800 font-semibold rounded-md">
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-400 text-sm lg:text-sm">Premium Brands</p>
+                            <i class="fa-solid fa-building rounded-md bg-yellow-600 p-3 text-white"></i>
+                        </div>
+                        <h3 class="text-2xl ">$15,570.00</h3>
+                        <p class="text-xs">Venta del día</p>
+                    </div>
+            
+                    <div class="w-full shadow-md space-y-2 lg:space-y-4  p-2 border text-gray-800 font-semibold rounded-md">
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-400 text-sm">Premium Brands</p>
+                            <i class="fa-solid fa-building rounded-md bg-green-600 p-3 text-white"></i>
+                        </div>
+                        <h3 class="text-2xl">$15,570.00</h3>
+                        <p class="text-xs">Venta del día</p>
+                    </div>
+            
+                    <div class="w-full shadow-md space-y-2 lg:space-y-4  p-2 border text-gray-800 font-semibold rounded-md">
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-400 text-sm">Premium Brands</p>
+                            <i class="fa-solid fa-building rounded-md bg-blue-600 p-3 text-white"></i>
+                        </div>
+                        <h3 class="text-2xl">$15,570.00</h3>
+                        <p class="text-xs">Venta del día</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+<%- include('../partials/footer') -%>

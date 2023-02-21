@@ -10,12 +10,15 @@ app.set('view engine','ejs');
 app.set('views','./view');
 
 app.get('/home',(req,res)=>{
-    res.render('partials/dashboard')
+    res.render('layout/dashboard')
 })
-
+app.get('/ventaCanales',(req,res)=>{
+    res.render('layout/ventaCanales')
+})
 app.get('/',(req,res)=>{
     res.render('auth/login');
 })
+
 app.listen(PORT,()=>{
     console.log('Hello wordl')
 })
