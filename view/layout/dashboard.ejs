@@ -48,7 +48,15 @@
             </div>
             
         </div>
-
+    
     </div>
-
+    <script>
+        async function usuarios(){
+            const url = "http://181.224.235.225:89/api/usuarios?name=";
+            const response = await fetch(url);
+            const data = await response.json();
+            console.log(data);
+        }
+        usuarios();
+    </script>
 <%- include('../partials/footer') -%>
